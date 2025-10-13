@@ -1,0 +1,20 @@
+.
+├── LICENSE
+├── README.en.md
+├── README.fr.md
+├── README.md
+├── db
+│   ├── Dockerfile
+│   └── words.sql
+├── structure.txt
+├── structure2.txt
+├── web
+│   ├── Dockerfile
+│   ├── dispatcher.go
+│   └── static
+└── words
+    ├── Dockerfile
+    ├── pom.xml
+    └── src
+
+6 directories, 12 files

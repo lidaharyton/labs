@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE             COMMAND                  CREATED         STATUS         PORTS                                         NAMES
+a039b92b6950   wordsmith-web     "./dispatcher"           6 minutes ago   Up 6 minutes   0.0.0.0:80->80/tcp, [::]:80->80/tcp           wordsmith-web-run
+762e2b7e6808   wordsmith-words   "/usr/local/bin/mvn-…"   7 minutes ago   Up 7 minutes   0.0.0.0:8080->8080/tcp, [::]:8080->8080/tcp   wordsmith-words-run
+ffe215bbba89   wordsmith-db      "docker-entrypoint.s…"   9 minutes ago   Up 9 minutes   5432/tcp                                      wordsmith-db-run

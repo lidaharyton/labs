@@ -1,0 +1,4 @@
+REPOSITORY        TAG       IMAGE ID       CREATED          SIZE
+wordsmith-web     latest    ca9bb8656d71   12 minutes ago   1.29GB
+wordsmith-words   latest    a19f9e7fea73   13 minutes ago   1.09GB
+wordsmith-db      latest    99364f283a78   15 minutes ago   665MB

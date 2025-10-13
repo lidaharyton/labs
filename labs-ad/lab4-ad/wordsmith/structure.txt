@@ -1,0 +1,16 @@
+.
+├── LICENSE
+├── README.en.md
+├── README.fr.md
+├── README.md
+├── db
+│   └── words.sql
+├── structure.txt
+├── web
+│   ├── dispatcher.go
+│   └── static
+└── words
+    ├── pom.xml
+    └── src
+
+6 directories, 8 files
