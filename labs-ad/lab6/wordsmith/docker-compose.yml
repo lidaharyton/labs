@@ -1,0 +1,34 @@
+services:
+  db:
+    build: ./db
+    container_name: wordsmith_db
+    environment:
+      POSTGRES_DB: words
+      POSTGRES_USER: words
+      POSTGRES_PASSWORD: words
+      POSTGRES_HOST_AUTH_METHOD: trust
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "words"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - "5433:5432" 
+
+  words:
+    build: ./words
+    container_name: wordsmith_words
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+
+  web:
+    build: ./web
+    container_name: wordsmith_web
+    depends_on:
+      - words
+    ports:
+      - "8081:80"
+
